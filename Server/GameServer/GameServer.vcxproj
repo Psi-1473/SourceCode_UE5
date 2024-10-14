@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2a16f7c1-81a5-4a8e-adc9-391e1bae6300}</ProjectGuid>
+    <RootNamespace>GameServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Binaries\$(Configuration)\</OutDir>
+    <IncludePath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryWPath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64;$(LibraryWPath)</LibraryWPath>
+    <LibraryPath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Binaries\$(Configuration)\</OutDir>
+    <IncludePath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryWPath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64;$(LibraryWPath)</LibraryWPath>
+    <LibraryPath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryWPath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64;$(LibraryWPath)</LibraryWPath>
+    <LibraryPath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryWPath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64;$(LibraryWPath)</LibraryWPath>
+    <LibraryPath>C:\Users\Peosh\Desktop\Projects\UnrealProjects\MyRpgProject\MyRpg\Server\Libraries\Libs\MySql\Debug\lib64\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)ServerCore\;$(SolutionDir)Libraries\Include\;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Libs\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>CALL $(SolutionDir)Common\protoc-21.12-win64\bin\GenPackets.bat</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)ServerCore\;$(SolutionDir)Libraries\Include\;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Libs\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>CALL $(SolutionDir)Common\protoc-21.12-win64\bin\GenPackets.bat</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Armor.cpp" />
+    <ClCompile Include="AttackComponent.cpp" />
+    <ClCompile Include="BaseAIController.cpp" />
+    <ClCompile Include="BaseObject.cpp" />
+    <ClCompile Include="BattleManager.cpp" />
+    <ClCompile Include="BoxCollider.cpp" />
+    <ClCompile Include="CapsuleCollider.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="ColliderUtils.cpp" />
+    <ClCompile Include="Consumable.cpp" />
+    <ClCompile Include="Creature.cpp" />
+    <ClCompile Include="DataManager.cpp" />
+    <ClCompile Include="DBManager.cpp" />
+    <ClCompile Include="Enum.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Equipment.cpp" />
+    <ClCompile Include="FSMController.cpp" />
+    <ClCompile Include="GameServer.cpp" />
+    <ClCompile Include="GameSession.cpp" />
+    <ClCompile Include="GameSessionManager.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="MapManager.cpp" />
+    <ClCompile Include="MatrixHelper.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="MonsterAIController.cpp" />
+    <ClCompile Include="MonsterSpawner.cpp" />
+    <ClCompile Include="MonsterStatComponent.cpp" />
+    <ClCompile Include="ObjectUtils.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerStatComponent.cpp" />
+    <ClCompile Include="Protocol.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Quest.cpp" />
+    <ClCompile Include="QuestComponent.cpp" />
+    <ClCompile Include="QuickSlotComponent.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="ServerPacketHandler.cpp" />
+    <ClCompile Include="SkillComponent.cpp" />
+    <ClCompile Include="SphereCollider.cpp" />
+    <ClCompile Include="StatComponent.cpp" />
+    <ClCompile Include="Struct.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Armor.h" />
+    <ClInclude Include="AttackComponent.h" />
+    <ClInclude Include="BaseAIController.h" />
+    <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="BattleManager.h" />
+    <ClInclude Include="BoxCollider.h" />
+    <ClInclude Include="CapsuleCollider.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="ColliderUtils.h" />
+    <ClInclude Include="Consumable.h" />
+    <ClInclude Include="Creature.h" />
+    <ClInclude Include="DataManager.h" />
+    <ClInclude Include="DBManager.h" />
+    <ClInclude Include="DBStruct.h" />
+    <ClInclude Include="Enum.pb.h" />
+    <ClInclude Include="Equipment.h" />
+    <ClInclude Include="FSMController.h" />
+    <ClInclude Include="GameSession.h" />
+    <ClInclude Include="GameSessionManager.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="MapManager.h" />
+    <ClInclude Include="MatrixHelper.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="MonsterAIController.h" />
+    <ClInclude Include="MonsterSpawner.h" />
+    <ClInclude Include="MonsterStatComponent.h" />
+    <ClInclude Include="ObjectUtils.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerStatComponent.h" />
+    <ClInclude Include="Protocol.pb.h" />
+    <ClInclude Include="Quest.h" />
+    <ClInclude Include="QuestComponent.h" />
+    <ClInclude Include="QuickSlotComponent.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="ServerPacketHandler.h" />
+    <ClInclude Include="SkillComponent.h" />
+    <ClInclude Include="SphereCollider.h" />
+    <ClInclude Include="StatComponent.h" />
+    <ClInclude Include="Struct.pb.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Weapon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Common\protoc-21.12-win64\bin\Enum.proto" />
+    <None Include="..\Common\protoc-21.12-win64\bin\GenPackets.bat" />
+    <None Include="..\Common\protoc-21.12-win64\bin\Protocol.proto" />
+    <None Include="..\Common\protoc-21.12-win64\bin\Struct.proto" />
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

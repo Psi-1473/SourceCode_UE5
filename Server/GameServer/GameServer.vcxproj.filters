@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{dc4550f0-e26d-4d7e-bb0c-bf53c6f49cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{bf74476f-4995-4053-89d0-39f2b37f8be8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\Proto">
+      <UniqueIdentifier>{374187cb-8cc6-4f71-9cdc-934de1c2963b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{ad68b8b2-920f-40d9-8111-3c9528e85d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{158c392d-937e-48a4-aee6-6f5f5bbf1448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{bd147961-ea3b-4f29-8134-f46183f3e16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Defines">
+      <UniqueIdentifier>{8ce0bedd-d504-4c5e-a34b-c0b2e3f19b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\AI">
+      <UniqueIdentifier>{476b4fa2-6c34-4e1b-84aa-4fe0e3884a7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Creature">
+      <UniqueIdentifier>{6be719bc-06b0-47ab-b7e8-76b564464ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{622236cc-89d3-4190-9a0a-6f29e0586763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{ddbad00f-985d-4287-9e62-ee96aa2191ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\StaticEntity">
+      <UniqueIdentifier>{8f8a91ca-eff4-4e78-b95c-324b0114e81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inventory">
+      <UniqueIdentifier>{f11b38ec-2742-4d49-b01b-a240f4ae8700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inventory\Item">
+      <UniqueIdentifier>{abcc26d0-3f1c-4d40-8f72-7c997ccfb3b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{0972e2bd-cd2c-486b-91b9-3e7cae640329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\StatComponent">
+      <UniqueIdentifier>{0b66af0b-1511-4865-9ff5-8be1e29b34d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSessionManager.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSession.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Enum.pb.cc">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol.pb.cc">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Struct.pb.cc">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerPacketHandler.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectUtils.cpp" />
+    <ClCompile Include="Collider.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereCollider.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCollider.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CapsuleCollider.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixHelper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MapManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseAIController.cpp">
+      <Filter>Game\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="FSMController.cpp">
+      <Filter>Game\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseObject.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterAIController.cpp">
+      <Filter>Game\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Game\Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game\Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature.cpp">
+      <Filter>Game\Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="DBManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterSpawner.cpp">
+      <Filter>Game\StaticEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Inventory\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Equipment.cpp">
+      <Filter>Inventory\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Consumable.cpp">
+      <Filter>Inventory\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Armor.cpp">
+      <Filter>Inventory\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Inventory\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="StatComponent.cpp">
+      <Filter>Component\StatComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterStatComponent.cpp">
+      <Filter>Component\StatComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerStatComponent.cpp">
+      <Filter>Component\StatComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSlotComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Quest.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSession.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSessionManager.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.pb.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.pb.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.pb.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerPacketHandler.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectUtils.h" />
+    <ClInclude Include="Collider.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereCollider.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CapsuleCollider.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixHelper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MapManager.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseAIController.h">
+      <Filter>Game\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="FSMController.h">
+      <Filter>Game\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObject.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterAIController.h">
+      <Filter>Game\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Game\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Game\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="Creature.h">
+      <Filter>Game\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="DBManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="DBStruct.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterSpawner.h">
+      <Filter>Game\StaticEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Inventory\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Equipment.h">
+      <Filter>Inventory\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Consumable.h">
+      <Filter>Inventory\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Armor.h">
+      <Filter>Inventory\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Inventory\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="StatComponent.h">
+      <Filter>Component\StatComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterStatComponent.h">
+      <Filter>Component\StatComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerStatComponent.h">
+      <Filter>Component\StatComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSlotComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Quest.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Common\protoc-21.12-win64\bin\Protocol.proto">
+      <Filter>Protocol\Proto</Filter>
+    </None>
+    <None Include="..\Common\protoc-21.12-win64\bin\Struct.proto">
+      <Filter>Protocol\Proto</Filter>
+    </None>
+    <None Include="..\Common\protoc-21.12-win64\bin\Enum.proto">
+      <Filter>Protocol\Proto</Filter>
+    </None>
+    <None Include="..\Common\protoc-21.12-win64\bin\GenPackets.bat">
+      <Filter>Protocol</Filter>
+    </None>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>
